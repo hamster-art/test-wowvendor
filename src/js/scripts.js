@@ -2,7 +2,7 @@
 import insertionQ from 'insertion-query';
 
 const card =
-  `<a href="" class="card cards__item">` +
+  `<div class="card cards__item">` +
   `<button class="card__delete btn btn--destructive btn--icon" type="button" title="" style="display: none">` +
   `<img class="btn__spinner" src="assets/spinner-light.svg" alt="" />` +
   `<svg class="btn__icon">` +
@@ -28,7 +28,7 @@ const card =
   `</div>` +
   `<div class="badge-sell">-50%</div>` +
   `</div>` +
-  `</a>`;
+  `</div>`;
 
 const tag =
   `<li class="select2-selection__choice">` +

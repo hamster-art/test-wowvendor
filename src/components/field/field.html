@@ -1,11 +1,11 @@
 <div class="field">
   @@if (lbl) {
-  <label class="field__lbl" for="search">@@lbl</label>
+  <label class="field__lbl" for="@@id">@@lbl</label>
   }
 
   <input
     class="field__input @@if(search == true){field__input--has-icon}"
-    id="search"
+    id="@@id"
     type="@@type"
     placeholder="@@placeholder"
   />
