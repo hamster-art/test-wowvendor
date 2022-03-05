@@ -1,0 +1,112 @@
+.accordion {
+  margin-top: rem(60);
+
+  @include xl-block {
+    margin-top: rem(80);
+  }
+}
+
+.accordion__item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $content-200;
+  }
+}
+
+.accordion__btn {
+  @include font-b-l;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: rem(24) 0;
+
+  border-width: 0;
+
+  background-color: transparent;
+
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.accordion__icon {
+  width: rem(20);
+  height: rem(20);
+
+  fill: $primary-600;
+}
+
+.accordion__open {
+  display: none;
+
+  .accordion__btn--active & {
+    display: block;
+  }
+}
+
+.accordion__close {
+  display: block;
+
+  .accordion__btn--active & {
+    display: none;
+  }
+}
+
+.accordion__body {
+  display: none;
+  padding-bottom: rem(20);
+
+  p {
+    margin-bottom: rem(20);
+  }
+
+  p,
+  ul {
+    color: $content-500;
+  }
+
+  h4 {
+    @include font-b-m;
+    margin-bottom: 1rem;
+
+    font-weight: 500;
+  }
+
+  ul {
+    margin-bottom: 2rem;
+    list-style-position: inside;
+
+    li::marker {
+      color: $primary-600;
+    }
+  }
+}
+
+.accordion__title {
+  @include font-d-xs;
+  font-weight: 600;
+
+  @include md-block {
+    @include font-d-m;
+    text-align: center;
+  }
+
+  + .accordion__item {
+    margin-top: rem(20);
+  }
+}
+
+.accordion__subtitle {
+  margin-top: rem(16);
+
+  color: $content-500;
+
+  @include md-block {
+    margin-top: rem(20);
+
+    text-align: center;
+  }
+
+  + .accordion__item {
+    margin-top: rem(20);
+  }
+}

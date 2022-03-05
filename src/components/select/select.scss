@@ -1,0 +1,102 @@
+.select2-container,
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  display: flex;
+}
+
+.selection {
+  width: 100%;
+}
+
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single {
+  display: flex;
+  align-items: center;
+  height: rem(44);
+  padding: 0 rem(40) 0 rem(10);
+
+  border: 1px solid $content-300;
+  border-radius: 0.5rem;
+
+  background-color: $base-white;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 12L9.43431 12.5657C9.74673 12.8781 10.2533 12.8781 10.5657 12.5657L10 12ZM14.5657 8.56569C14.8781 8.25327 14.8781 7.74673 14.5657 7.43431C14.2533 7.12189 13.7467 7.12189 13.4343 7.43431L14.5657 8.56569ZM6.56569 7.43431C6.25327 7.1219 5.74673 7.1219 5.43431 7.43431C5.12189 7.74673 5.12189 8.25327 5.43431 8.56569L6.56569 7.43431ZM13.4343 7.43431L9.43431 11.4343L10.5657 12.5657L14.5657 8.56569L13.4343 7.43431ZM10.5657 11.4343L6.56569 7.43431L5.43431 8.56569L9.43431 12.5657L10.5657 11.4343Z' fill='%23101828'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+
+  color: $content-400;
+  font-family: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: $content-300;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  @include font-b-xs;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: rem(22);
+  margin-top: 0;
+  margin-right: 0.25rem;
+  margin-left: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+
+  border-width: 0;
+  border-radius: 0.25rem;
+
+  background-color: $primary-50;
+
+  color: $primary-600;
+  vertical-align: bottom;
+
+  &:hover {
+    background-color: $primary-200;
+  }
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+  padding: 0;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove,
+.tags-rmv-btn {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 0.5rem;
+  padding: 0;
+
+  border-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  background-color: transparent;
+
+  color: $primary-600;
+  font-size: 1em;
+  font-weight: 500;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.select2-search.select2-search--inline {
+  display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: $content-900;
+  font-weight: 500;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 0;
+}
+
+.select2-selection__arrow {
+  display: none;
+}

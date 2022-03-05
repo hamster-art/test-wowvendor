@@ -1,0 +1,48 @@
+.field {
+  position: relative;
+}
+
+.field__lbl {
+  @include font-b-s;
+  display: block;
+  margin-bottom: 4px;
+
+  color: $content-500;
+  font-weight: 500;
+}
+
+.field__input {
+  @include font-b-m;
+  width: 100%;
+  height: rem(44);
+  padding-right: rem(18);
+  padding-left: rem(18);
+
+  border: 1px solid $content-300;
+  border-radius: 0.5rem;
+
+  background-color: $base-white;
+
+  color: $content-400;
+  font-family: inherit;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:focus {
+    border-color: $content-400;
+  }
+
+  &--has-icon {
+    padding-left: rem(46);
+  }
+}
+
+.field__icon {
+  position: absolute;
+  bottom: rem(12);
+  left: rem(18);
+  width: rem(20);
+  height: rem(20);
+
+  fill: $content-400;
+}

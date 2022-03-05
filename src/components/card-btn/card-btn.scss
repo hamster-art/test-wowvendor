@@ -1,0 +1,21 @@
+.card-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: rem(44);
+
+  border: 2px dashed $primary-300;
+
+  border-radius: rem(12);
+
+  text-align: center;
+}
+
+.card-btn__text {
+  margin-bottom: rem(20);
+
+  color: $content-400;
+
+  @include font-b-s;
+}

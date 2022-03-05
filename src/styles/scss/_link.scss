@@ -1,0 +1,56 @@
+.link {
+  display: inline-flex;
+  padding: 0;
+  column-gap: 0.5rem;
+
+  border-color: transparent;
+
+  background-color: transparent;
+
+  text-decoration: none;
+
+  &--primary {
+    border-color: transparent;
+
+    background-color: transparent;
+
+    color: $content-500;
+
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-600;
+    }
+
+    &:disabled {
+      color: $content-300;
+
+      pointer-events: none;
+    }
+  }
+
+  &--secondary {
+    border-color: transparent;
+
+    background-color: transparent;
+
+    color: $content-100;
+
+    text-decoration: none;
+
+    &:hover {
+      color: $content-400;
+    }
+
+    &:disabled {
+      color: $content-600;
+
+      pointer-events: none;
+    }
+  }
+}
+
+.link__icon {
+  width: rem(20);
+  height: rem(20);
+}

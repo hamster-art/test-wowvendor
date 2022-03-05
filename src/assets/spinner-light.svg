@@ -1,0 +1,16 @@
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @keyframes rotate {
+            100% {
+            transform:rotate(360deg);
+            }
+        }
+
+        .spinner {
+            animation: rotate 1s linear infinite;
+        transform-origin: center;
+        }
+    </style>
+    <path class="spinner" d="M17.7 10C17.7 10.4418 18.0582 10.8 18.5 10.8C18.9418 10.8 19.3 10.4418 19.3 10H17.7ZM10.5 18.8C10.9418 18.8 11.3 18.4418 11.3 18C11.3 17.5582 10.9418 17.2 10.5 17.2V18.8ZM10.5 17.2C6.52355 17.2 3.3 13.9764 3.3 10H1.7C1.7 14.8601 5.63989 18.8 10.5 18.8V17.2ZM3.3 10C3.3 6.02355 6.52355 2.8 10.5 2.8V1.2C5.63989 1.2 1.7 5.13989 1.7 10H3.3ZM10.5 2.8C14.4764 2.8 17.7 6.02355 17.7 10H19.3C19.3 5.13989 15.3601 1.2 10.5 1.2V2.8Z"
+          fill="white"/>
+</svg>

@@ -1,0 +1,14 @@
+.nav {
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: $content-900;
+  font-weight: 500;
+  text-decoration: none;
+}

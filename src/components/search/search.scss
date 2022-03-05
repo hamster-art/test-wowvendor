@@ -1,0 +1,59 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+
+  row-gap: 1rem;
+
+  @include md-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+
+    row-gap: 0;
+  }
+
+  @include xl-block {
+    margin-top: 3.5rem;
+  }
+}
+
+.search__item-l {
+  @include md-block {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+.search__item-s {
+  display: none;
+
+  @include md-block {
+    display: block;
+  }
+}
+
+.search__btn {
+  width: 100%;
+
+  @include md-block {
+    display: none;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  overflow: hidden;
+  overflow-x: auto;
+  column-gap: 0.5rem;
+
+  @include md-block {
+    margin-top: 1.25rem;
+  }
+
+  @include xl-block {
+    margin-top: 2rem;
+  }
+}

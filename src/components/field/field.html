@@ -1,0 +1,18 @@
+<div class="field">
+  @@if (lbl) {
+  <label class="field__lbl" for="search">@@lbl</label>
+  }
+
+  <input
+    class="field__input @@if(search == true){field__input--has-icon}"
+    id="search"
+    type="@@type"
+    placeholder="@@placeholder"
+  />
+
+  @@if (search == true) {
+  <svg class="field__icon">
+    <use xlink:href="styles/icons/sprite.svg#search"></use>
+  </svg>
+  }
+</div>

@@ -1,0 +1,110 @@
+.btn {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: rem(44);
+  padding-right: rem(18);
+  padding-left: rem(18);
+  overflow: hidden;
+  column-gap: 0.5rem;
+
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &--primary {
+    border-color: $primary-600;
+
+    background-color: $primary-600;
+
+    color: $base-white;
+
+    &:hover {
+      background-color: $primary-700;
+    }
+  }
+
+  &--secondary {
+    border-color: $content-300;
+
+    background-color: $base-white;
+
+    color: $content-900;
+
+    &:hover {
+      background-color: $content-50;
+    }
+  }
+
+  &--destructive {
+    border-color: $destructive-700;
+
+    background-color: $destructive-700;
+
+    color: $base-white;
+
+    &:hover {
+      background-color: $destructive-600;
+    }
+
+    &:disabled {
+      background-color: $destructive-200;
+    }
+  }
+
+  &--loading {
+    .btn__text {
+      opacity: 0;
+    }
+
+    .btn__icon {
+      display: none;
+    }
+  }
+
+  &--icon {
+    width: rem(44);
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &--full {
+    width: 100%;
+  }
+}
+
+.btn__icon {
+  width: rem(20);
+  height: rem(20);
+
+  fill: currentcolor;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+[class*='btn__spinner'] {
+  display: none;
+  width: rem(20);
+  height: rem(20);
+
+  transform-origin: center;
+  animation: rotate 1s linear infinite;
+
+  .btn--loading & {
+    display: block;
+  }
+}
+
+.btn__spinner-single {
+  position: absolute;
+  top: calc(50% - rem(10));
+  left: calc(50% - rem(10));
+}

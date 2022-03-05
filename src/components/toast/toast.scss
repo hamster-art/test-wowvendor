@@ -1,0 +1,78 @@
+.toast {
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+
+  border-radius: 0.25rem;
+
+  background-color: $primary-600;
+
+  color: $base-white;
+}
+
+.toast__body {
+  flex-grow: 1;
+
+  text-align: center;
+}
+
+.toast__item {
+  @include font-b-s;
+  padding-right: rem(36);
+  padding-left: rem(36);
+
+  background-color: $primary-600;
+
+  @include from($md + 1px) {
+    padding-right: rem(44);
+    padding-left: rem(44);
+  }
+
+  @include from($md + 1px) {
+    @include font-b-m;
+  }
+}
+
+.toast__btn {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  flex-shrink: 0;
+  width: rem(20);
+  height: rem(20);
+  padding: 0;
+
+  transform: translateY(-50%);
+
+  border-color: transparent;
+
+  background-color: transparent;
+
+  color: $base-white;
+
+  &:disabled {
+    color: $primary-500;
+  }
+
+  &--prev {
+    left: rem(8);
+
+    @include from($md + 1px) {
+      left: rem(24);
+    }
+  }
+
+  &--next {
+    right: rem(8);
+
+    @include from($md + 1px) {
+      right: rem(24);
+    }
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    fill: currentcolor;
+  }
+}

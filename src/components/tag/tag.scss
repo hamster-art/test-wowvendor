@@ -1,0 +1,34 @@
+.tag {
+  @include font-b-s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(40);
+  padding-right: rem(18);
+  padding-left: rem(18);
+  column-gap: 0.5rem;
+
+  border-radius: 0.5rem;
+
+  background-color: $primary-100;
+
+  color: $primary-600;
+  font-weight: 500;
+}
+
+.tag__btn {
+  width: rem(20);
+  height: rem(20);
+  padding: 0;
+
+  border-width: 0;
+
+  background-color: transparent;
+}
+
+.tag__icon {
+  width: 100%;
+  height: 100%;
+
+  fill: $primary-600;
+}

@@ -1,0 +1,25 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.breadcrumbs__link {
+  @include font-b-s;
+  color: $content-500;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:last-child {
+    color: $content-300;
+
+    pointer-events: none;
+  }
+}
+
+.breadcrumbs__icon {
+  width: 1rem;
+  height: 1rem;
+
+  fill: $content-300;
+}

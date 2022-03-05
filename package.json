@@ -1,0 +1,66 @@
+{
+  "name": "hamsterart.biz",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build:run": "npx gulp run",
+    "build:build": "npx gulp build",
+    "build:delete": "npx gulp deleteBuild",
+    "stylelint:fix": "npx stylelint --fix \"**/*.scss\"  --custom-syntax postcss-scss",
+    "prettier:fix": "prettier ./src/**/*.{scss,js} --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamster-art/hamsterart.biz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamster-art/hamsterart.biz/issues"
+  },
+  "homepage": "https://github.com/hamster-art/hamsterart.biz#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0",
+    "ansi-colors": "^4.1.1",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "fancy-log": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-favicons": "^3.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-css": "^1.1.0",
+    "gulp-webp-html-nosvg": "^1.0.5",
+    "gulp-xv-webp-html": "^1.1.2",
+    "node-notifier": "^10.0.1",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.5.3",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0",
+    "webpack": "^5.69.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "insertion-query": "^1.1.0"
+  }
+}

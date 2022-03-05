@@ -1,0 +1,34 @@
+<a href="" class="card cards__item">
+  <button class="card__delete btn btn--destructive btn--icon" type="button" title="" style="display: none">
+    <img class="btn__spinner" src="assets/spinner-light.svg" alt="" />
+    <svg class="btn__icon">
+      <use xlink:href="styles/icons/sprite.svg#cross"></use>
+    </svg>
+  </button>
+  <div class="card__media">
+    <img class="card__img" data-img-cover src="@@img" alt="" />
+  </div>
+  <div class="card__body">
+    <div class="badge-type badge-type--@@type">@@typeText</div>
+    <h3 class="card__title">@@title</h3>
+    <div class="card__rating">
+      <img src="assets/stars.svg" alt="" />
+      <span>1,820</span>
+    </div>
+    <p class="card__text">@@text</p>
+  </div>
+  <div class="card__footer">
+    <div class="price">
+      @@if (oldPrice) {
+      <div class="price__old">@@oldPrice</div>
+      } @@if (price) {
+      <div class="price__current">@@price</div>
+      } @@if (free) {
+      <div>@@free</div>
+      }
+    </div>
+    @@if (sell) {
+    <div class="badge-sell">@@sell</div>
+    }
+  </div>
+</a>

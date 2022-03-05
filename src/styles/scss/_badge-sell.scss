@@ -1,0 +1,14 @@
+.badge-sell {
+  @include font-b-xs;
+  height: rem(26);
+  padding-right: rem(6);
+  padding-left: rem(6);
+
+  border-radius: 0.25rem;
+
+  background-color: $lime-500;
+
+  color: $base-white;
+  font-weight: 600;
+  line-height: rem(26);
+}

@@ -1,0 +1,29 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+
+  row-gap: 1rem;
+
+  @include md-block {
+    flex-direction: row;
+    margin-top: 2.5rem;
+
+    gap: 2rem;
+  }
+}
+
+.cards__item {
+  @include md-block {
+    width: calc(50% - 1rem);
+  }
+
+  @include lg-block {
+    width: calc(33.33% - (4rem / 3));
+  }
+
+  @include xl-block {
+    width: calc(25% - (6rem / 4));
+  }
+}

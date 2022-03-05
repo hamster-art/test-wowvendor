@@ -1,0 +1,59 @@
+.badge-type {
+  @include font-b-xs;
+  display: inline-flex;
+  align-items: center;
+  height: rem(22);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  column-gap: 0.5rem;
+
+  border-radius: 0.25rem;
+
+  &::before {
+    content: '';
+
+    display: inline-block;
+    width: rem(6);
+    height: rem(6);
+
+    border-radius: 50%;
+
+    background-color: currentcolor;
+  }
+
+  &--shooter {
+    background-color: $primary-50;
+
+    color: $primary-600;
+  }
+
+  &--multiplayer {
+    background-color: $red-50;
+
+    color: $red-600;
+  }
+
+  &--action {
+    background-color: $orange-50;
+
+    color: $orange-600;
+  }
+
+  &--card {
+    background-color: $green-50;
+
+    color: $green-600;
+  }
+
+  &--strategy {
+    background-color: $grey-50;
+
+    color: $grey-600;
+  }
+
+  &--action-rpg {
+    background-color: $blue-50;
+
+    color: $blue-600;
+  }
+}

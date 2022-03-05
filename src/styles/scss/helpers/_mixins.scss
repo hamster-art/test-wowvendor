@@ -1,0 +1,72 @@
+@mixin container {
+  width: 90rem;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: rem(20);
+  padding-left: rem(20);
+
+  @include md-block {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  @include xl-block {
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
+}
+
+@mixin container-large {
+  width: 90rem;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+@mixin font-b-l {
+  font-size: rem(18);
+  line-height: rem(24);
+}
+
+@mixin font-b-m {
+  font-size: rem(16);
+  line-height: rem(24);
+}
+
+@mixin font-b-s {
+  font-size: rem(14);
+  line-height: rem(20);
+}
+
+@mixin font-b-xs {
+  font-size: rem(12);
+  line-height: rem(18);
+}
+
+@mixin font-d-xl {
+  font-size: rem(52);
+  line-height: rem(56);
+}
+
+@mixin font-d-l {
+  font-size: rem(40);
+  line-height: rem(44);
+}
+
+@mixin font-d-m {
+  font-size: rem(32);
+  line-height: rem(38);
+}
+
+@mixin font-d-s {
+  font-size: rem(28);
+  line-height: rem(32);
+}
+
+@mixin font-d-xs {
+  font-size: rem(24);
+  line-height: rem(28);
+}
